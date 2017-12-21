@@ -12,17 +12,11 @@
 	<description>Spring Boot In Action</description>
 
 	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.5.9.RELEASE</version>
-		<relativePath /> <!-- lookup parent from repository -->
+		<groupId>com.sbia</groupId>
+		<artifactId>sbia-parent</artifactId>
+		<version>1.0</version>
+		<relativePath>../../</relativePath>
 	</parent>
-
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<java.version>1.8</java.version>
-	</properties>
 
 	<dependencies>
 		<dependency>
@@ -53,22 +47,18 @@
 		<dependency>
 			<groupId>org.grails</groupId>
 			<artifactId>gorm-hibernate4-spring-boot</artifactId>
-			<version>6.1.8.RELEASE</version>
 		</dependency>
 		<dependency>
 			<groupId>org.grails</groupId>
 			<artifactId>grails-gsp-spring-boot</artifactId>
-			<version>1.0.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.grails</groupId>
 			<artifactId>grails-web-gsp-taglib</artifactId>
-			<version>3.2.11</version>
 		</dependency>
 		<dependency>
 			<groupId>org.grails</groupId>
 			<artifactId>grails-validation</artifactId>
-			<version>3.3.2</version>
 		</dependency>
 	</dependencies>
 
@@ -80,6 +70,5 @@
 			</plugin>
 		</plugins>
 	</build>
-
 
 </project>

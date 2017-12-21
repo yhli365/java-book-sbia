@@ -10,14 +10,14 @@
 
 	<name>sbia-parent</name>
 	<description>Spring Boot In Action</description>
-	
+
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>1.5.9.RELEASE</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	
+
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -25,8 +25,56 @@
 	</properties>
 
 	<modules>
-        <module>ch02</module>
-        <module>ch03</module>
-    </modules>
+		<!-- <module>ch01</module> -->
+		<module>ch02</module>
+		<module>ch03</module>
+		<module>ch04</module>
+		<!-- <module>ch05</module> -->
+		<module>ch06</module>
+		<module>ch07</module>
+		<module>ch08</module>
+	</modules>
 
+	<dependencyManagement>
+		<dependencies>
+			<!-- Grails -->
+			<dependency>
+				<groupId>org.grails</groupId>
+				<artifactId>gorm-hibernate4-spring-boot</artifactId>
+				<version>6.1.8.RELEASE</version>
+			</dependency>
+			<dependency>
+				<groupId>org.grails</groupId>
+				<artifactId>grails-gsp-spring-boot</artifactId>
+				<version>1.0.0</version>
+			</dependency>
+			<dependency>
+				<groupId>org.grails</groupId>
+				<artifactId>grails-web-gsp-taglib</artifactId>
+				<version>3.2.11</version>
+			</dependency>
+			<dependency>
+				<groupId>org.grails</groupId>
+				<artifactId>grails-validation</artifactId>
+				<version>3.3.2</version>
+			</dependency>
+
+			<!-- Database: PostgreSQL -->
+			<dependency>
+				<groupId>org.postgresql</groupId>
+				<artifactId>postgresql</artifactId>
+				<version>42.1.4</version>
+				<scope>runtime</scope>
+			</dependency>
+
+			<!-- Database: MySQL -->
+			<dependency>
+				<groupId>mysql</groupId>
+				<artifactId>mysql-connector-java</artifactId>
+				<version>5.1.45</version>
+				<scope>runtime</scope>
+			</dependency>
+
+		</dependencies>
+	</dependencyManagement>
 </project>
