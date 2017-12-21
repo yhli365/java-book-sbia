@@ -1,0 +1,11 @@
+error:
+  whitelabel:
+    enabled: false
+
+amazon:
+  associate_id: habuma-20
+
+logging:
+  level:
+    root: INFO
+    org.springframework.security: WARN

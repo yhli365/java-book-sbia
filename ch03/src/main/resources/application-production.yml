@@ -1,0 +1,6 @@
+amazon:
+  associate_id: habuma-55
+
+logging:
+  level:
+    root: INFO

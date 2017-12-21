@@ -1,0 +1,6 @@
+amazon:
+  associate_id: habuma-88
+
+logging:
+  level:
+    root: DEBUG
